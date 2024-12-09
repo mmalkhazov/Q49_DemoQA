@@ -23,7 +23,7 @@ public class ProfilePage extends BasePage {
         WebElement searchBox;
 
     public ProfilePage typeKeyInSearchInput(String text) {
-        type(searchBox, text);
+        typeWithJS(searchBox, text, 0,300);
         return this;
     }
 
